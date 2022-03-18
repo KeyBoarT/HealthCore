@@ -117,7 +117,7 @@ namespace HealthCore
         }
         #endregion
 
-
+        #region childForm
         private Form activeForm = null;
         private void openChildForm(Form childForm)
         {
@@ -132,5 +132,6 @@ namespace HealthCore
             childForm.BringToFront();
             childForm.Show();
         }
+        #endregion
     }
 }

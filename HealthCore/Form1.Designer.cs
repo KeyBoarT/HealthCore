@@ -29,10 +29,12 @@ namespace HealthCore
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HealthCore));
             this.PanelSideMenu = new System.Windows.Forms.Panel();
             this.panelHospital3 = new System.Windows.Forms.Panel();
             this.btnBeyinHospital3 = new System.Windows.Forms.Button();
+            this.medicalImages = new System.Windows.Forms.ImageList(this.components);
             this.btnGozHospital3 = new System.Windows.Forms.Button();
             this.btnKalpHospital3 = new System.Windows.Forms.Button();
             this.btnHospital3 = new System.Windows.Forms.Button();
@@ -86,7 +88,6 @@ namespace HealthCore
             this.panelHospital3.Name = "panelHospital3";
             this.panelHospital3.Size = new System.Drawing.Size(250, 120);
             this.panelHospital3.TabIndex = 10;
-            // 
             // btnBeyinHospital3
             // 
             this.btnBeyinHospital3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -94,15 +95,26 @@ namespace HealthCore
             this.btnBeyinHospital3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBeyinHospital3.Font = new System.Drawing.Font("Potta One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBeyinHospital3.ForeColor = System.Drawing.Color.LightGray;
+            this.btnBeyinHospital3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBeyinHospital3.ImageIndex = 2;
+            this.btnBeyinHospital3.ImageList = this.medicalImages;
             this.btnBeyinHospital3.Location = new System.Drawing.Point(0, 80);
             this.btnBeyinHospital3.Name = "btnBeyinHospital3";
-            this.btnBeyinHospital3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnBeyinHospital3.Size = new System.Drawing.Size(250, 40);
             this.btnBeyinHospital3.TabIndex = 11;
-            this.btnBeyinHospital3.Text = "Beyin";
+            this.btnBeyinHospital3.Text = " Beyin";
             this.btnBeyinHospital3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBeyinHospital3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBeyinHospital3.UseVisualStyleBackColor = true;
             this.btnBeyinHospital3.Click += new System.EventHandler(this.btnBeyinHospital3_Click);
+            // 
+            // medicalImages
+            // 
+            this.medicalImages.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("medicalImages.ImageStream")));
+            this.medicalImages.TransparentColor = System.Drawing.Color.Transparent;
+            this.medicalImages.Images.SetKeyName(0, "heart (1).png");
+            this.medicalImages.Images.SetKeyName(1, "eye.png");
+            this.medicalImages.Images.SetKeyName(2, "brain.png");
             // 
             // btnGozHospital3
             // 
@@ -111,13 +123,16 @@ namespace HealthCore
             this.btnGozHospital3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGozHospital3.Font = new System.Drawing.Font("Potta One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGozHospital3.ForeColor = System.Drawing.Color.LightGray;
+            this.btnGozHospital3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGozHospital3.ImageIndex = 1;
+            this.btnGozHospital3.ImageList = this.medicalImages;
             this.btnGozHospital3.Location = new System.Drawing.Point(0, 40);
             this.btnGozHospital3.Name = "btnGozHospital3";
-            this.btnGozHospital3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnGozHospital3.Size = new System.Drawing.Size(250, 40);
             this.btnGozHospital3.TabIndex = 10;
-            this.btnGozHospital3.Text = "Göz";
+            this.btnGozHospital3.Text = " Göz";
             this.btnGozHospital3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGozHospital3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGozHospital3.UseVisualStyleBackColor = true;
             this.btnGozHospital3.Click += new System.EventHandler(this.btnGozHospital3_Click);
             // 
@@ -128,13 +143,16 @@ namespace HealthCore
             this.btnKalpHospital3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKalpHospital3.Font = new System.Drawing.Font("Potta One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKalpHospital3.ForeColor = System.Drawing.Color.LightGray;
+            this.btnKalpHospital3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKalpHospital3.ImageIndex = 0;
+            this.btnKalpHospital3.ImageList = this.medicalImages;
             this.btnKalpHospital3.Location = new System.Drawing.Point(0, 0);
             this.btnKalpHospital3.Name = "btnKalpHospital3";
-            this.btnKalpHospital3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnKalpHospital3.Size = new System.Drawing.Size(250, 40);
             this.btnKalpHospital3.TabIndex = 9;
-            this.btnKalpHospital3.Text = "Kalp";
+            this.btnKalpHospital3.Text = " Kalp";
             this.btnKalpHospital3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKalpHospital3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKalpHospital3.UseVisualStyleBackColor = true;
             this.btnKalpHospital3.Click += new System.EventHandler(this.btnKalpHospital3_Click);
             // 
@@ -143,7 +161,7 @@ namespace HealthCore
             this.btnHospital3.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHospital3.FlatAppearance.BorderSize = 0;
             this.btnHospital3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHospital3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnHospital3.Font = new System.Drawing.Font("Potta One", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHospital3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.btnHospital3.Location = new System.Drawing.Point(0, 431);
             this.btnHospital3.Name = "btnHospital3";
@@ -174,13 +192,16 @@ namespace HealthCore
             this.btnBeyinHospital2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBeyinHospital2.Font = new System.Drawing.Font("Potta One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBeyinHospital2.ForeColor = System.Drawing.Color.LightGray;
+            this.btnBeyinHospital2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBeyinHospital2.ImageIndex = 2;
+            this.btnBeyinHospital2.ImageList = this.medicalImages;
             this.btnBeyinHospital2.Location = new System.Drawing.Point(0, 80);
             this.btnBeyinHospital2.Name = "btnBeyinHospital2";
-            this.btnBeyinHospital2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnBeyinHospital2.Size = new System.Drawing.Size(250, 40);
             this.btnBeyinHospital2.TabIndex = 5;
-            this.btnBeyinHospital2.Text = "Beyin";
+            this.btnBeyinHospital2.Text = " Beyin";
             this.btnBeyinHospital2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBeyinHospital2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBeyinHospital2.UseVisualStyleBackColor = true;
             this.btnBeyinHospital2.Click += new System.EventHandler(this.btnBeyinHospital2_Click);
             // 
@@ -191,13 +212,16 @@ namespace HealthCore
             this.btnGozHospital2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGozHospital2.Font = new System.Drawing.Font("Potta One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGozHospital2.ForeColor = System.Drawing.Color.LightGray;
+            this.btnGozHospital2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGozHospital2.ImageIndex = 1;
+            this.btnGozHospital2.ImageList = this.medicalImages;
             this.btnGozHospital2.Location = new System.Drawing.Point(0, 40);
             this.btnGozHospital2.Name = "btnGozHospital2";
-            this.btnGozHospital2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnGozHospital2.Size = new System.Drawing.Size(250, 40);
             this.btnGozHospital2.TabIndex = 4;
-            this.btnGozHospital2.Text = "Göz";
+            this.btnGozHospital2.Text = " Göz";
             this.btnGozHospital2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGozHospital2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGozHospital2.UseVisualStyleBackColor = true;
             this.btnGozHospital2.Click += new System.EventHandler(this.btnGozHospital2_Click);
             // 
@@ -208,13 +232,16 @@ namespace HealthCore
             this.btnKalpHospital2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKalpHospital2.Font = new System.Drawing.Font("Potta One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKalpHospital2.ForeColor = System.Drawing.Color.LightGray;
+            this.btnKalpHospital2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKalpHospital2.ImageIndex = 0;
+            this.btnKalpHospital2.ImageList = this.medicalImages;
             this.btnKalpHospital2.Location = new System.Drawing.Point(0, 0);
             this.btnKalpHospital2.Name = "btnKalpHospital2";
-            this.btnKalpHospital2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnKalpHospital2.Size = new System.Drawing.Size(250, 40);
             this.btnKalpHospital2.TabIndex = 3;
-            this.btnKalpHospital2.Text = "Kalp";
+            this.btnKalpHospital2.Text = " Kalp";
             this.btnKalpHospital2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKalpHospital2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKalpHospital2.UseVisualStyleBackColor = true;
             this.btnKalpHospital2.Click += new System.EventHandler(this.btnKalpHospital2_Click);
             // 
@@ -223,7 +250,7 @@ namespace HealthCore
             this.btnHospital2.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHospital2.FlatAppearance.BorderSize = 0;
             this.btnHospital2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHospital2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnHospital2.Font = new System.Drawing.Font("Potta One", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnHospital2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.btnHospital2.Location = new System.Drawing.Point(0, 266);
             this.btnHospital2.Name = "btnHospital2";
@@ -254,13 +281,16 @@ namespace HealthCore
             this.btnBeyinHospital1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBeyinHospital1.Font = new System.Drawing.Font("Potta One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBeyinHospital1.ForeColor = System.Drawing.Color.LightGray;
+            this.btnBeyinHospital1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBeyinHospital1.ImageIndex = 2;
+            this.btnBeyinHospital1.ImageList = this.medicalImages;
             this.btnBeyinHospital1.Location = new System.Drawing.Point(0, 80);
             this.btnBeyinHospital1.Name = "btnBeyinHospital1";
-            this.btnBeyinHospital1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnBeyinHospital1.Size = new System.Drawing.Size(250, 40);
             this.btnBeyinHospital1.TabIndex = 4;
-            this.btnBeyinHospital1.Text = "Beyin";
+            this.btnBeyinHospital1.Text = " Beyin";
             this.btnBeyinHospital1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBeyinHospital1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBeyinHospital1.UseVisualStyleBackColor = true;
             this.btnBeyinHospital1.Click += new System.EventHandler(this.btnBeyinHospital1_Click);
             // 
@@ -271,13 +301,16 @@ namespace HealthCore
             this.btnGozHospital1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGozHospital1.Font = new System.Drawing.Font("Potta One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGozHospital1.ForeColor = System.Drawing.Color.LightGray;
+            this.btnGozHospital1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGozHospital1.ImageIndex = 1;
+            this.btnGozHospital1.ImageList = this.medicalImages;
             this.btnGozHospital1.Location = new System.Drawing.Point(0, 40);
             this.btnGozHospital1.Name = "btnGozHospital1";
-            this.btnGozHospital1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnGozHospital1.Size = new System.Drawing.Size(250, 40);
             this.btnGozHospital1.TabIndex = 3;
-            this.btnGozHospital1.Text = "Göz";
+            this.btnGozHospital1.Text = " Göz";
             this.btnGozHospital1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGozHospital1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGozHospital1.UseVisualStyleBackColor = true;
             this.btnGozHospital1.Click += new System.EventHandler(this.btnGozHospital1_Click);
             // 
@@ -288,13 +321,16 @@ namespace HealthCore
             this.btnKalpHospital1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKalpHospital1.Font = new System.Drawing.Font("Potta One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKalpHospital1.ForeColor = System.Drawing.Color.LightGray;
+            this.btnKalpHospital1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKalpHospital1.ImageIndex = 0;
+            this.btnKalpHospital1.ImageList = this.medicalImages;
             this.btnKalpHospital1.Location = new System.Drawing.Point(0, 0);
             this.btnKalpHospital1.Name = "btnKalpHospital1";
-            this.btnKalpHospital1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnKalpHospital1.Size = new System.Drawing.Size(250, 40);
             this.btnKalpHospital1.TabIndex = 2;
-            this.btnKalpHospital1.Text = "Kalp";
+            this.btnKalpHospital1.Text = " Kalp";
             this.btnKalpHospital1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKalpHospital1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKalpHospital1.UseVisualStyleBackColor = true;
             this.btnKalpHospital1.Click += new System.EventHandler(this.btnKalpHospital1_Click);
             // 
@@ -303,7 +339,7 @@ namespace HealthCore
             this.btnHospital1.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHospital1.FlatAppearance.BorderSize = 0;
             this.btnHospital1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHospital1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnHospital1.Font = new System.Drawing.Font("Potta One", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnHospital1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.btnHospital1.Location = new System.Drawing.Point(0, 100);
             this.btnHospital1.Name = "btnHospital1";
@@ -365,6 +401,7 @@ namespace HealthCore
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelSideMenu);
+            this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1024, 635);
             this.MinimumSize = new System.Drawing.Size(800, 450);
@@ -405,6 +442,7 @@ namespace HealthCore
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ImageList medicalImages;
     }
 }
 
