@@ -25,6 +25,7 @@ namespace HealthCore
 
         private void CustomizeDesign()
         {
+            panelDeveloperInfos.Visible = false;
             panelHospital1.Visible = false;
             panelHospital2.Visible = false;
             panelHospital3.Visible = false;
@@ -32,6 +33,8 @@ namespace HealthCore
 
         private void hideHospitalMenu()
         {
+            if (panelDeveloperInfos.Visible == true)
+                panelDeveloperInfos.Visible = false;
             if (panelHospital1.Visible == true)
                 panelHospital1.Visible = false;
             if (panelHospital2.Visible == true)
@@ -97,23 +100,19 @@ namespace HealthCore
 
         #region Hospital3
         private void btnHospital3_Click(object sender, EventArgs e)
-        {
-            showHospitalMenu(panelHospital3);
+        {showHospitalMenu(panelHospital3);
         }
 
         private void btnKalpHospital3_Click(object sender, EventArgs e)
-        {
-            hideHospitalMenu();
+        {hideHospitalMenu();
         }
 
         private void btnGozHospital3_Click(object sender, EventArgs e)
-        {
-            hideHospitalMenu();
+        {hideHospitalMenu();
         }
 
         private void btnBeyinHospital3_Click(object sender, EventArgs e)
-        {
-            hideHospitalMenu();
+        {hideHospitalMenu();
         }
         #endregion
 
@@ -131,6 +130,28 @@ namespace HealthCore
             panelChildForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+        #endregion
+
+        #region DeveloperInfos
+        private void btnDeveloperInfos_Click(object sender, EventArgs e)
+        {
+            showHospitalMenu(panelDeveloperInfos);
+        }
+
+        private void btnDeveloperGitHub_Click(object sender, EventArgs e)
+        {
+            hideHospitalMenu();
+        }
+
+        private void btnDeveloperInstagram_Click(object sender, EventArgs e)
+        {
+            hideHospitalMenu();
+        }
+
+        private void btnDeveloperStackOF_Click(object sender, EventArgs e)
+        {
+            hideHospitalMenu();
         }
         #endregion
     }
