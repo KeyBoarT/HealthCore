@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace E_Arşiv_Fatura
+namespace HealthCore
 {
     class DeveloperInfos
     {
